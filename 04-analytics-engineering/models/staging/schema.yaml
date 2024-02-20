@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: big-query-406221
+    schema: trips_data_all
+
+    tables:
+      - name: green_tripdata1
+      - name: yellow_tripdata
