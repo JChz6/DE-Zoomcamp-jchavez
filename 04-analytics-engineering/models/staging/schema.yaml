@@ -8,6 +8,7 @@ sources:
     tables:
       - name: green_tripdata1
       - name: yellow_tripdata
+      - name: fhv_tripdata1
 
 models:
   - name: stg_green_tripdata
@@ -21,9 +22,6 @@ models:
               severity: warn
           - not_null:
               severity: warn          
-
-
-          
 
       - name: vendorid
         data_type: int64

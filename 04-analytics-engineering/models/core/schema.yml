@@ -17,7 +17,46 @@ models:
         tests:
             - not_null:
                 severity: error
-      
+
+
+  - name: fact_fhv_trips
+    description: ""
+    columns:
+      - name: tripid
+        data_type: string
+        description: ""
+
+      - name: dispatching_base_num
+        data_type: string
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: pickup_locationid
+        data_type: int64
+        description: ""
+
+      - name: dropoff_locationid
+        data_type: int64
+        description: ""
+
+      - name: sr_flag
+        data_type: numeric
+        description: ""
+
+      - name: affiliated_base_number
+        data_type: string
+        description: ""
+
+
+
+
   - name: fact_trips
     description: >
       Taxi trips corresponding to both service zones (Green and yellow).
